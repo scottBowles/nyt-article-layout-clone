@@ -112,6 +112,13 @@ h5 {
   font-size: 16px;
 }
 
+h6 {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+
 figcaption {
   font-size: 15px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -197,7 +204,7 @@ figcaption :last-child {
   width: 300px;
 }
 
-.subscribe {
+.subscribe-btn {
   background-color: #567b95;
   color: #fff;
   border-radius: 3px;
@@ -209,12 +216,12 @@ figcaption :last-child {
   justify-content: center;
 }
 
-.subscribe:hover {
+.subscribe-btn:hover {
   background-color: #326891;
   cursor: pointer;
 }
 
-.subscribe h3 {
+.subscribe-btn h3 {
   font-size: 10.75px;
   margin: auto;
 }
@@ -243,6 +250,7 @@ figcaption :last-child {
 /*    MAIN    */
 
 .main-content-container {
+  position: relative;
   margin-top: 88px;
   margin-bottom: 56px;
 }
@@ -270,7 +278,6 @@ h1 {
 
 .hero-figure figcaption {
   width: 720px;
-
 }
 
 .article-interact {
@@ -299,7 +306,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-header date {
+header time {
   font-size: 13px;
 }
 
@@ -516,6 +523,40 @@ header date {
   max-width: 575px;
 }
 
+.editors-picks {
+  float: right;
+  position: relative;
+  top: 306px;
+  margin-right: 40px;
+  width: 210px;
+}
+
+.editors-picks hr {
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: none;
+  border-top: 1px solid rgb(226,226,226);
+}
+
+.editors-picks a {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.editors-picks a div:hover {
+  text-decoration: underline;
+}
+
+.editors-picks img {
+  padding-right: 4px;
+  height: 75px;
+}
+
 /*
  *    ARTICLE FOOT -- INFORMATION, LINKS TO COMMENTS, SOCIAL MEDIA
  */
@@ -689,6 +730,10 @@ footer {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
+
 footer > hr:first-child {
   margin-bottom: 3px;
   background-color: transparent;
@@ -713,8 +758,10 @@ a.to-nyt-home {
 
 .footer-nav-links {
   display: flex;
-  justify-content: space-between;
-  width: 925px;
+}
+
+.footer-nav-links * {
+  flex: 1 1;
 }
 
 .footer-nav-links h3 {
@@ -726,13 +773,56 @@ a.to-nyt-home {
   font-size: 14px;
   line-height: 24px;
   color: #000;
-
 }
 
+.subscribe-links {
+  border-left: 1px solid rgb(226,226,226);
+  padding-left: 15px;
+  flex: 0 1 208px;
+}
 
+.subscribe-links svg {
+  height: 13px;
+  width: 13px;
+}
 
+.subscribe-links ul li {
+  font-size: 11px;
+}
 
+.subscribe-links ul:first-of-type li {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32px;
+}
 
+.subscribe-links ul:last-child {
+  border-top: 1px solid rgb(226,226,226);
+}
+
+.subscribe-links ul:nth-of-type(n+2) {
+  padding-top: 8px;
+}
+
+.bottom-nav-bar {
+  margin-top: 10px;
+  border-top: 1px solid rgb(226,226,226);
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-nav-bar > div * {
+  display: inline-block;
+}
+
+.bottom-nav-bar li {
+  padding: 12px 6px 30px 6px;
+}
+
+.bottom-nav-bar a {
+  font-size: 11px;
+  color: #666666;
+}
 
 /*    BOTTOM BAR    */
 
