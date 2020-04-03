@@ -630,6 +630,10 @@ header time {
   margin-right: 43px;
 }
 
+.recommended a:hover {
+  text-decoration: underline;
+}
+
 .recommended hr {
   margin-top: 0;
   border: none;
