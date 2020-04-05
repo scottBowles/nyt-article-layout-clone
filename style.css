@@ -143,6 +143,10 @@ figcaption :last-child {
   color: #326891;
 }
 
+.main-article p a:hover {
+  text-decoration: none;
+}
+
 
 /*    TOP BAR    */
 
@@ -316,39 +320,55 @@ header time {
   align-items: center;
 }
 
-.social > * {
+.social > li {
   margin-left: 16px;
+}
+
+.social > li,
+.social > li button {
+  cursor: pointer;
 }
 
 .grey-back {
   background-color: #eee;
   height: 27px;
   width: 27px;
+  border: 1px solid #eee;
   border-radius: 50%;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+
+.grey-back:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
 .grey-back svg {
   height: 15px;
   width: 15px;
   position: relative;
-  bottom: 3px;
+  bottom: 2px;
 }
 
-.bookmark {
+.reply svg {
+  position: relative;
+  bottom: 1px;
+}
+
+#bookmark {
   position: relative;
   top: 1px;
   margin-left: 9px;
+  cursor: pointer;
 }
 
-.go-to-comments {
+#go-to-comments {
   margin-left: 8px;
 }
 
-.go-to-comments i {
+#go-to-comments i {
   display: block;
   width: 26px;
   height: 14px;
@@ -363,7 +383,7 @@ header time {
   align-items: center;
 }
 
-.go-to-comments span {
+#go-to-comments span {
   font-size: 12px;
 }
 
@@ -431,6 +451,7 @@ header time {
 }
 
 .inflation-figure figcaption p {
+  padding-bottom: 10px;
   color: #666666;
   font-size: 14px;
   line-height: 18px;
@@ -438,7 +459,7 @@ header time {
 
 .inflation-figure {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 17px;
   width: 945px;
   margin: auto;
@@ -456,6 +477,7 @@ header time {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 17px;
   color: #333333;
   margin-bottom: 34px;
 }
@@ -630,9 +652,17 @@ header time {
   margin-right: 43px;
 }
 
-.recommended a:hover {
+.recommended h5:hover {
   text-decoration: underline;
 }
+
+a.rec-title:hover {
+  color: rgb(102,102,102);
+}
+
+/* .recommended a:hover {
+  text-decoration: underline;
+} */
 
 .recommended hr {
   margin-top: 0;
@@ -736,6 +766,10 @@ footer {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+a.to-nyt-home:hover {
+  text-decoration: none;
 }
 
 footer > hr:first-child {
